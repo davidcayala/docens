@@ -1,0 +1,154 @@
+/* ==========================================================================
+   1. Design Tokens & Global Styles
+   ========================================================================== */
+:root {
+    /* Typographic scale and colors optimized for academic reading */
+    --font-primary: 'Crimson Text', 'Georgia', serif;
+    --font-sans: 'Inter', 'Helvetica Neue', sans-serif;
+    --color-bg: #fcfbf9;       /* Soft parchment background to minimize eye strain */
+    --color-text: #2c2a29;     /* Deep charcoal for optimal reading contrast */
+    --color-primary: #8c2d19;  /* Academic brick red for accents and links */
+    --color-muted: #605e5c;    /* Neutral grey for secondary meta-text */
+    --line-height-base: 1.65;  /* Ideal line spacing for text density */
+}
+
+body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-family: var(--font-primary);
+    font-size: 1.15rem;
+    line-height: var(--line-height-base);
+    margin: 0;
+    padding: 0;
+}
+
+/* ==========================================================================
+   2. Layout and Navigation
+   ========================================================================== */
+header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e6e4e0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    font-family: var(--font-sans);
+}
+
+.nav-brand {
+    font-weight: 700;
+    color: var(--color-primary);
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: var(--color-text);
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+    color: var(--color-primary);
+}
+
+/* ==========================================================================
+   3. Content Framework & Typography
+   ========================================================================== */
+main {
+    max-width: 800px; /* Limits width to maintain 60-75 characters per line (optimal for reading) */
+    margin: 3rem auto;
+    padding: 0 2rem;
+}
+
+section {
+    margin-bottom: 4rem;
+}
+
+h1, h2, h3 {
+    font-family: var(--font-sans);
+    color: #1a1918;
+    margin-top: 0;
+}
+
+h1 { font-size: 2.2rem; border-bottom: 2px solid var(--color-primary); padding-bottom: 0.5rem; }
+h2 { font-size: 1.6rem; color: var(--color-primary); margin-bottom: 1.5rem; }
+
+/* ==========================================================================
+   4. Component Architecture (Grid & Cards)
+   ========================================================================== */
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.course-card {
+    background: #ffffff;
+    border: 1px solid #e6e4e0;
+    border-radius: 4px;
+    padding: 1.5rem;
+    transition: box-shadow 0.2s ease;
+}
+
+.course-card:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.course-meta {
+    font-family: var(--font-sans);
+    font-size: 0.85rem;
+    color: var(--color-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-top: -0.5rem;
+}
+
+/* Links and Buttons */
+a {
+    color: var(--color-primary);
+}
+
+.download-button {
+    display: inline-block;
+    background-color: var(--color-primary);
+    color: #ffffff;
+    font-family: var(--font-sans);
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+}
+
+.download-button:hover {
+    background-color: #6a2112;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    font-family: var(--font-sans);
+    font-size: 0.85rem;
+    color: var(--color-muted);
+    border-top: 1px solid #e6e4e0;
+    background: #ffffff;
+}
