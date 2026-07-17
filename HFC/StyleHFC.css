@@ -1,0 +1,259 @@
+/* ==========================================================================
+   1. Variables Globales y Diseño de Lectura
+   ========================================================================== */
+:root {
+    --font-serif: 'Crimson Text', 'Georgia', serif; /* Ideal para prosa académica */
+    --font-sans: 'Inter', 'Helvetica Neue', sans-serif; /* Para menús e interfaces */
+    --color-fondo: #fbfaf7;      /* Crema suave que reduce el cansancio ocular */
+    --color-texto: #2a2827;      /* Carbón oscuro con excelente legibilidad */
+    --color-acento: #8c2a1c;     /* Rojo académico para títulos y fechas */
+    --color-borde: #e3dec3;      /* Tono pergamino para separar bloques */
+    --color-bloque: #ffffff;     /* Blanco puro para tarjetas individuales */
+    --line-height: 1.65;
+}
+
+body {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    font-family: var(--font-serif);
+    font-size: 1.15rem;
+    line-height: var(--line-height);
+    margin: 0;
+    padding: 0;
+}
+
+/* ==========================================================================
+   2. Sistema de Navegación Estructural
+   ========================================================================== */
+header {
+    background-color: #ffffff;
+    border-bottom: 1px solid var(--color-borde);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    font-family: var(--font-sans);
+}
+
+.nav-brand {
+    font-weight: 700;
+    color: var(--color-acento);
+    font-size: 1.1rem;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: var(--color-texto);
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+.nav-links a:hover {
+    color: var(--color-acento);
+}
+
+/* ==========================================================================
+   3. Estructuración del Contenido Escrito
+   ========================================================================== */
+main {
+    max-width: 800px; /* Limita el ancho para que la lectura sea cómoda */
+    margin: 3rem auto;
+    padding: 0 2rem;
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--font-sans);
+    color: #1c1a1a;
+}
+
+h1 { font-size: 2.2rem; border-bottom: 2px solid var(--color-acento); padding-bottom: 0.5rem; }
+h2 { font-size: 1.6rem; color: var(--color-acento); margin-bottom: 2rem; }
+
+.course-code {
+    font-family: var(--font-sans);
+    font-size: 0.9rem;
+    color: var(--color-acento);
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.course-description {
+    font-size: 1.25rem;
+    font-style: italic;
+    color: #595552;
+}
+
+/* ==========================================================================
+   4. La Línea de Tiempo (Timeline)
+   ========================================================================== */
+.syllabus-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    position: relative;
+    padding-left: 1rem;
+}
+
+/* Línea vertical decorativa de fondo */
+.syllabus-timeline::before {
+    content: '';
+    position: absolute;
+    left: 45px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: var(--color-borde);
+    z-index: 1;
+}
+
+/* Tarjeta individual de sesión */
+.timeline-week-card {
+    display: flex;
+    gap: 2rem;
+    position: relative;
+    z-index: 2;
+}
+
+/* Marcador visual con la Fecha (2.1) */
+.week-marker {
+    font-family: var(--font-sans);
+    font-size: 0.9rem;
+    font-weight: 700;
+    background-color: #ffffff;
+    color: var(--color-acento);
+    border: 2px solid var(--color-acento);
+    border-radius: 20px;
+    padding: 0.5rem 0.75rem;
+    min-width: 60px;
+    text-align: center;
+    height: fit-content;
+}
+
+/* Bloque contenedor del contenido principal (2.2 y 2.3) */
+.week-content {
+    background-color: var(--color-bloque);
+    border: 1px solid var(--color-borde);
+    border-radius: 6px;
+    padding: 1.5rem;
+    flex-grow: 1;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+}
+
+.week-content h3 {
+    margin-top: 0;
+    font-size: 1.3rem;
+}
+
+.week-objective {
+    font-size: 1.05rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Caja contenedora de la Bibliografía (2.4) */
+.bibliography-box {
+    background-color: var(--color-fondo);
+    border-left: 3px solid var(--color-acento);
+    padding: 1rem;
+    border-radius: 0 4px 4px 0;
+}
+
+.bibliography-box h4 {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    margin: 0 0 0.5rem 0;
+    color: #595552;
+}
+
+.bibliography-box ul {
+    margin: 0;
+    padding-left: 1.2rem;
+    font-size: 0.95rem;
+}
+
+.bibliography-box li {
+    margin-bottom: 0.25rem;
+}
+
+/* ==========================================================================
+   5. Optimización para Móviles
+   ========================================================================== */
+@media (max-width: 600px) {
+    .syllabus-timeline::before {
+        display: none; /* Elimina la línea vertical en pantallas pequeñas para evitar amontonamiento */
+    }
+    .timeline-week-card {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .week-marker {
+        align-self: flex-start;
+    }
+}
+/* Styling for Academic Bulleted Lists */
+.academic-list {
+    padding-left: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.academic-list li {
+    margin-bottom: 0.5rem;
+    list-style-type: square; /* Clean, professional geometric bullet markers */
+}
+
+/* Polished Tabular Matrix Design */
+.academic-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    font-family: var(--font-sans);
+    font-size: 0.95rem;
+}
+
+.academic-table th {
+    background-color: var(--color-acento);
+    color: #ffffff;
+    text-align: left;
+    padding: 0.75rem 1rem;
+    font-weight: 600;
+}
+
+.academic-table td {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid var(--color-borde);
+    background-color: #ffffff;
+}
+
+/* Subtle meta-banner layout typography */
+.header-meta-banner {
+    background-color: #f5f2eb;
+    border-bottom: 1px solid var(--color-borde);
+    padding: 0.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-family: var(--font-sans);
+    font-size: 0.85rem;
+    color: #595552;
+}
+
+.header-meta-banner a {
+    color: var(--color-acento);
+    text-decoration: none;
+    font-weight: 600;
+}

@@ -2,258 +2,570 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <!-- Asegura que el diseño se adapte perfectamente a pantallas móviles y tablets -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Programa de Estudios: Historia de la Filosofía Contemporánea</title>
-    <!-- Vinculación con nuestra hoja de estilos externa -->
     <link rel="stylesheet" href="styleHFC.css">
 </head>
 <body>
 
-    <!-- Encabezado global y navegación del sitio -->
+    <!-- Global Header with Academic Meta-Data -->
     <header>
         <nav aria-label="Navegación del Programa">
-            <div class="nav-brand">Página del Curso</div>
+            <div class="nav-brand">Página del curso</div>
             <ul class="nav-links">
                 <li><a href="index.html">← Volver al Perfil Principal</a></li>
                 <li><a href="#presentacion">Presentación</a></li>
                 <li><a href="#cronograma">Cronograma</a></li>
+                <li><a href="#evaluacion">Evaluación</a></li>
+                <li><a href="#reglas">Reglas</a></li>
             </ul>
         </nav>
+        <!-- Dedicated course metadata banner for immediate student access -->
+        <div class="header-meta-banner">
+            <div class="meta-group">
+                <strong>Horarios y Aulas:</strong> 
+                <span>Martes 16:00–18:00 hs. (Aula AdPortas 305)</span> | 
+                <span>Jueves 14:00–16:00 hs. (Aula AdPortas 406B)</span>
+            </div>
+            <div class="meta-group">
+                <strong>Contacto:</strong> 
+                <a href="mailto:david.castaneda1@unisabana.edu.co">david.castaneda1@unisabana.edu.co</a>
+            </div>
+        </div>
     </header>
 
-    <!-- Contenedor Principal de la Página -->
     <main>
         
-        <!-- Sección de Presentación del Curso -->
+        <!-- Section 1: Presentación del Curso (Subdivided) -->
         <section id="presentacion" aria-labelledby="titulo-curso">
             <h1 id="titulo-curso">Historia de la Filosofía Contemporánea</h1>
-            <p class="course-code">2026 - 2 | Cronograma de Clases</p>
-            <p class="course-description">
-                Un recorrido crítico por las principales corrientes filosóficas desde el siglo XIX hasta el siglo XX, analizando el quiebre de la metafísica tradicional, el surgimiento de la filosofía analítica, la fenomenología y el existencialismo.
-            </p>
-        </section>
-
-        <!-- Cronograma del Semestre con la Línea de Tiempo -->
-        <section id="cronograma" aria-labelledby="titulo-cronograma">
-            <h2 id="titulo-cronograma">Calendario de Lecturas y Temas</h2>
+            <p class="course-code">2026-2</p>
             
-            <div class="syllabus-timeline">
-                
-                <!-- Sesión 1: 21/07 -->
-                <div class="timeline-week-card">
-                    <div class="week-marker">21/07</div>
-                    <div class="week-content">
-                        <h3>Introducción: Panorama de la filosofía</h3>
-                        <p class="week-objective">
-                            <strong>Temas:</strong> Resumen de la filosofía de los siglos XVII y XVIII.
-                        </p>
-                        <div class="bibliography-box">
-                            <h4>Bibliografía Obligatoria:</h4>
-                            <ul>
-                                <li><em>Sin lecturas asignadas para esta sesión de apertura.</em></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+            <div class="syllabus-sub-section">
+                <h2>Descripción de la Asignatura</h2>
+                <p class="course-description">
+                    Un recorrido crítico por las principales corrientes filosóficas desde el siglo XIX hasta el siglo XX, analizando el quiebre de la metafísica tradicional, el surgimiento de la filosofía analítica, la fenomenología y el existencialismo[cite: 2]. Este espacio curricular busca dotar al estudiante de las herramientas conceptuales necesarias para comprender las crisis del sujeto moderno y las reconfiguraciones del pensamiento contemporáneo.
+                </p>
+            </div>
 
-                <!-- Sesión 2: 23/07 -->
-                <div class="timeline-week-card">
-                    <div class="week-marker">23/07</div>
-                    <div class="week-content">
-                        <h3>Introducción: Las escuelas del siglo XIX</h3>
-                        <p class="week-objective">
-                            <strong>Temas:</strong> Idealismo alemán, Hegel y sus seguidores; el Neo-Kantianismo; escuelas de Europa Central; ideologías y filosofía francesa; utilitarismo y filosofía británica; filosofía en los Estados Unidos; otras escuelas.
-                        </p>
-                        <div class="bibliography-box">
-                            <h4>Bibliografía Obligatoria:</h4>
-                            <ul>
-                                <li><em>Sin lecturas asignadas.</em></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+            <div class="syllabus-sub-section">
+                <h2>Resultados de Aprendizaje</h2>
+                <ul class="academic-list">
+                    <li>Identificar de manera rigurosa las rupturas epistemológicas que configuran el paso de la modernidad tardía a la filosofía contemporánea.</li>
+                    <li>Analizar críticamente las fuentes primarias del pensamiento decimonónico y del siglo XX, rastreando continuidades y disputas teóricas.</li>
+                    <li>Argumentar con claridad conceptual en torno a problemas de orden ontológico, ético y político planteados por los autores del programa.</li>
+                </ul>
+            </div>
 
-                <!-- Sesión 3: 28/07 -->
-                <div class="timeline-week-card">
-                    <div class="week-marker">28/07</div>
-                    <div class="week-content">
-                        <h3>Georg Wilhelm Friedrich Hegel</h3>
-                        <p class="week-objective">
-                            <strong>Temas:</strong> Historia, dialéctica, Estado.
-                        </p>
-                        <div class="bibliography-box">
-                            <h4>Bibliografía Obligatoria:</h4>
-                            <ul>
-                                <!-- Hyperlink targeting pdfs/Hegel.pdf with download attribute -->
-                                <li>
-                                    <a href="pdfs/Hegel.pdf" class="bib-link" download>
-                                        Hegel, G. W. F., <em>Principios de la filosofía del derecho</em>, párrafos 341-360.
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Sesión 4: 30/07 -->
-                <div class="timeline-week-card">
-                    <div class="week-marker">30/07</div>
-                    <div class="week-content">
-                        <h3>Karl Marx</h3>
-                        <p class="week-objective">
-                            <strong>Temas:</strong> Materialismo dialéctico; discusiones en torno a la teoría del valor; revolución y acción.
-                        </p>
-                        <div class="bibliography-box">
-                            <h4>Bibliografía Obligatoria:</h4>
-                            <ul>
-                                <!-- Both works linked to the central Marx.pdf resource -->
-                                <li>
-                                    <a href="https://www.marxists.org/espanol/m-e/1846/ideoalemana/feuerbach/1.htm" class="bib-link" download>
-                                        Marx, K., <em>La ideología alemana</em>, Parte 1.
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.marxists.org/espanol/m-e/1850s/criteconpol.htm" class="bib-link" download>
-                                        Marx, K., <em>Contribución a la crítica de la economía política</em>, Prefacio.
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Sesión 5: 04/08 -->
-                <div class="timeline-week-card">
-                    <div class="week-marker">04/08</div>
-                    <div class="week-content">
-                        <h3>Arthur Schopenhauer</h3>
-                        <p class="week-objective">
-                            <strong>Temas:</strong> Síntesis de la filosofía kantiana; la voluntad; el pesimismo.
-                        </p>
-                        <div class="bibliography-box">
-                            <h4>Bibliografía Obligatoria:</h4>
-                            <ul>
-                                <li>
-                                    <a href="pdfs/Schopenhauer.pdf" class="bib-link" download>
-                                        Schopenhauer, A., <em>El mundo como voluntad y representación</em>, secciones 24 y 28.
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Sesión 6: 06/08 -->
-                <div class="timeline-week-card">
-                    <div class="week-marker">06/08</div>
-                    <div class="week-content">
-                        <h3>Friedrich Nietzsche</h3>
-                        <p class="week-objective">
-                            <strong>Temas:</strong> Historia y genealogía, voluntad de poder.
-                        </p>
-                        <div class="bibliography-box">
-                            <h4>Bibliografía Obligatoria:</h4>
-                            <ul>
-                                <li>
-                                    <a href="pdfs/Nietzsche.pdf" class="bib-link" download>
-                                        Nietzsche, F., <em>La genealogía de la moral</em>, Prefacio y Tratado Primero.
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Sesión 7: 11/08 -->
-                <div class="timeline-week-card">
-                    <div class="week-marker">11/08</div>
-                    <div class="week-content">
-                        <h3>Søren Kierkegaard</h3>
-                        <p class="week-objective">
-                            <strong>Temas:</strong> Individualidad; estadios del ser (estético, ético, religioso); angustia, desesperación y decisión; finitud y dependencia.
-                        </p>
-                        <div class="bibliography-box">
-                            <h4>Bibliografía Obligatoria:</h4>
-                            <ul>
-                                <li>
-                                    <a href="pdfs/Kierkegaard.pdf" class="bib-link" download>
-                                        Kierkegaard, S., <em>La enfermedad mortal: Primera parte - Libros I y II</em>.
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Sesión 8: 13/08 -->
-                <div class="timeline-week-card">
-                    <div class="week-marker">13/08</div>
-                    <div class="week-content">
-                        <h3>Auguste Comte</h3>
-                        <p class="week-objective">
-                            <strong>Temas:</strong> Evolución de la historia; el estado positivo; el positivismo como proyecto científico y político.
-                        </p>
-                        <div class="bibliography-box">
-                            <h4>Bibliografía Obligatoria:</h4>
-                            <ul>
-                                <li>
-                                    <a href="pdfs/Comte.pdf" class="bib-link" download>
-                                        Comte, A., <em>Curso de filosofía positiva</em>, Lección 1: secciones I y II.
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Sesión 9: 18/08 -->
-                <div class="timeline-week-card">
-                    <div class="week-marker">18/08</div>
-                    <div class="week-content">
-                        <h3>Franz Brentano</h3>
-                        <p class="week-objective">
-                            <strong>Temas:</strong> La filosofía como ciencia; la psicología como ciencia; la conciencia intencional.
-                        </p>
-                        <div class="bibliography-box">
-                            <h4>Bibliografía Obligatoria:</h4>
-                            <ul>
-                                <li>
-                                    <a href="pdfs/Brentano.pdf" class="bib-link" download>
-                                        Brentano, F., <em>La psicología desde el punto de vista empírico</em>, Libro 1: capítulos I y II.
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Sesión 10: 20/08 -->
-                <div class="timeline-week-card">
-                    <div class="week-marker">20/08</div>
-                    <div class="week-content">
-                        <h3>John Stuart Mill</h3>
-                        <p class="week-objective">
-                            <strong>Temas:</strong> Diferencias cualitativas del placer; libertad de expresión.
-                        </p>
-                        <div class="bibliography-box">
-                            <h4>Bibliografía Obligatoria:</h4>
-                            <ul>
-                                <li>
-                                    <a href="pdfs/Mill.pdf" class="bib-link" download>
-                                        Mill, J. S., <em>El utilitarismo</em>, capítulos 2 y 4 (Sujeto a revisión).
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
+            <div class="syllabus-sub-section">
+                <h2>Indicadores de Desempeño</h2>
+                <ul class="academic-list">
+                    <li>Reconoce las tesis fundamentales del idealismo, el materialismo y el vitalismo, contrastándolas en debates escritos y orales.</li>
+                    <li>Aplica nociones conceptuales precisas al interpretar pasajes complejos extraídos de las lecturas obligatorias obligatorias.</li>
+                    <li>Escribe ensayos breves de carácter filosófico que demuestran una estructura lógica consistente y un manejo riguroso de fuentes de referencia.</li>
+                </ul>
             </div>
         </section>
+
+        <!-- Section 2: Cronograma (Existing Component) -->
+        <section id="cronograma" aria-labelledby="titulo-cronograma">
+            <h2 class="section-title">Calendario de Lecturas y Temas</h2>
+            <div class="syllabus-timeline">
+                <!-- Session blocks remain fully operational here -->
+                <div class="syllabus-timeline">
+    
+    <!-- Sesión 1: 21/07 -->
+    <div class="timeline-week-card">
+        <div class="week-marker">21/07</div>
+        <div class="week-content">
+            <h3>Introducción: Panorama de la filosofía</h3>
+            <p class="week-objective"><strong>Temas:</strong> Resumen de la filosofía de los siglos XVII y XVIII.</p>
+            <div class="bibliography-box">
+                <h4>Bibliografía Obligatoria:</h4>
+                <ul>
+                    <li><em>Sin lecturas asignadas para esta sesión de apertura.</em></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sesión 2: 23/07 -->
+    <div class="timeline-week-card">
+        <div class="week-marker">23/07</div>
+        <div class="week-content">
+            <h3>Introducción: Las escuelas del siglo XIX</h3>
+            <p class="week-objective"><strong>Temas:</strong> Idealismo alemán, Hegel y sus seguidores; el Neo-Kantianismo; escuelas de Europa Central; ideologías y filosofía francesa; utilitarismo y filosofía británica; filosofía en los Estados Unidos; otras escuelas.</p>
+            <div class="bibliography-box">
+                <h4>Bibliografía Obligatoria:</h4>
+                <ul>
+                    <li><em>Sin lecturas asignadas.</em></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sesión 3: 28/07 -->
+    <div class="timeline-week-card">
+        <div class="week-marker">28/07</div>
+        <div class="week-content">
+            <h3>Georg Wilhelm Friedrich Hegel</h3>
+            <p class="week-objective"><strong>Temas:</strong> Historia, dialéctica, Estado.</p>
+            <div class="bibliography-box">
+                <h4>Bibliografía Obligatoria:</h4>
+                <ul>
+                    <li><a href="pdfs/Hegel.pdf" class="bib-link" download>Hegel, G. W. F., <em>Principios de la filosofía del derecho</em>, párrafos 341-360.</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sesión 4: 30/07 -->
+    <div class="timeline-week-card">
+        <div class="week-marker">30/07</div>
+        <div class="week-content">
+            <h3>Karl Marx</h3>
+            <p class="week-objective"><strong>Temas:</strong> Materialismo dialéctico; discusiones en torno a la teoría del valor; revolución y acción.</p>
+            <div class="bibliography-box">
+                <h4>Bibliografía Obligatoria:</h4>
+                <ul>
+                    <li><a href="https://www.marxists.org/espanol/m-e/1846/ideoalemana/feuerbach/1.htm" class="bib-link">Marx, K., <em>La ideología alemana</em>, Parte 1.</a></li>
+                    <li><a href="https://www.marxists.org/espanol/m-e/1850s/criteconpol.htm" class="bib-link">Marx, K., <em>Contribución a la crítica de la economía política</em>, Prefacio.</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sesión 5: 04/08 -->
+    <div class="timeline-week-card">
+        <div class="week-marker">04/08</div>
+        <div class="week-content">
+            <h3>Arthur Schopenhauer</h3>
+            <p class="week-objective"><strong>Temas:</strong> Síntesis de la filosofía kantiana; la voluntad; el pesimismo.</p>
+            <div class="bibliography-box">
+                <h4>Bibliografía Obligatoria:</h4>
+                <ul>
+                    <li><a href="pdfs/Schopenhauer.pdf" class="bib-link" download>Schopenhauer, A., <em>El mundo como voluntad y representación</em>, secciones 24 y 28.</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sesión 6: 06/08 -->
+    <div class="timeline-week-card">
+        <div class="week-marker">06/08</div>
+        <div class="week-content">
+            <h3>Friedrich Nietzsche</h3>
+            <p class="week-objective"><strong>Temas:</strong> Historia y genealogía, voluntad de poder.</p>
+            <div class="bibliography-box">
+                <h4>Bibliografía Obligatoria:</h4>
+                <ul>
+                    <li><a href="pdfs/Nietzsche.pdf" class="bib-link" download>Nietzsche, F., <em>La genealogía de la moral</em>, Prefacio y Tratado Primero.</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sesión 7: 11/08 -->
+    <div class="timeline-week-card">
+        <div class="week-marker">11/08</div>
+        <div class="week-content">
+            <h3>Søren Kierkegaard</h3>
+            <p class="week-objective"><strong>Temas:</strong> Individualidad; estadios del ser (estético, ético, religioso); angustia, desesperación y decisión; finitud y dependencia.</p>
+            <div class="bibliography-box">
+                <h4>Bibliografía Obligatoria:</h4>
+                <ul>
+                    <li><a href="pdfs/Kierkegaard.pdf" class="bib-link" download>Kierkegaard, S., <em>La enfermedad mortal</em>.</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sesión 8: 13/08 -->
+    <div class="timeline-week-card">
+        <div class="week-marker">13/08</div>
+        <div class="week-content">
+            <h3>Auguste Comte</h3>
+            <p class="week-objective"><strong>Temas:</strong> Evolución de la historia; el estado positivo; el positivismo como proyecto científico y político.</p>
+            <div class="bibliography-box">
+                <h4>Bibliografía Obligatoria:</h4>
+                <ul>
+                    <li><a href="pdfs/Comte.pdf" class="bib-link" download>Comte, A., <em>Curso de filosofía positiva</em>, Lección 1: secciones I y II.</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sesión 9: 18/08 -->
+    <div class="timeline-week-card">
+        <div class="week-marker">18/08</div>
+        <div class="week-content">
+            <h3>Franz Brentano</h3>
+            <p class="week-objective"><strong>Temas:</strong> La filosofía como ciencia; la psicología como ciencia; la conciencia intencional.</p>
+            <div class="bibliography-box">
+                <h4>Bibliografía Obligatoria:</h4>
+                <ul>
+                    <li><a href="pdfs/Brentano.pdf" class="bib-link" download>Brentano, F., <em>La psicología desde el punto de vista empírico</em>, Libro 1: capítulos I y II.</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sesión 10: 20/08 -->
+    <div class="timeline-week-card">
+        <div class="week-marker">20/08</div>
+        <div class="week-content">
+            <h3>John Stuart Mill</h3>
+            <p class="week-objective"><strong>Temas:</strong> Diferencias cualitativas del placer; libertad de expresión.</p>
+            <div class="bibliography-box">
+                <h4>Bibliografía Obligatoria:</h4>
+                <ul>
+                    <li><a href="pdfs/Mill.pdf" class="bib-link" download>Mill, J. S., <em>El utilitarismo</em>, capítulos 2 y 4.</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sesión 11: 25/08 (Analítica) -->
+    <div class="timeline-week-card">
+        <div class="week-marker">25/08</div>
+        <div class="week-content">
+            <h3>Gottlob Frege</h3>
+            <p class="week-objective"><strong>Temas:</strong> Introducción a la tradición analítica, sentido y referencia.</p>
+            <div class="bibliography-box">
+                <h4>Bibliografía Obligatoria:</h4>
+                <ul>
+                    <li><a href="pdfs/Frege.pdf" class="bib-link" download>Frege, G., <em>Lectura seleccionada (PDF)</em>.</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sesión 12: 27/08 -->
+    <div class="timeline-week-card">
+        <div class="week-marker">27/08</div>
+        <div class="week-content">
+            <h3>Bertrand Russell</h3>
+            <p class="week-objective"><strong>Temas:</strong> Atomismo lógico y teoría de las descripciones.</p>
+            <div class="bibliography-box">
+                <h4>Bibliografía Obligatoria:</h4>
+                <ul>
+                    <li><a href="pdfs/Russell.pdf" class="bib-link" download>Russell, B., <em>Lectura seleccionada (PDF)</em>.</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sesión 13: 01/09 -->
+    <div class="timeline-week-card">
+        <div class="week-marker">01/09</div>
+        <div class="week-content">
+            <h3>Rudolf Carnap</h3>
+            <p class="week-objective"><strong>Temas:</strong> Positivismo lógico y la superación de la metafísica.</p>
+            <div class="bibliography-box">
+                <h4>Bibliografía Obligatoria:</h4>
+                <ul>
+                    <li><a href="pdfs/Carnap.pdf" class="bib-link" download>Carnap, R., <em>Lectura seleccionada (PDF)</em>.</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sesión 14: 03/09 -->
+    <div class="timeline-week-card">
+        <div class="week-marker">03/09</div>
+        <div class="week-content">
+            <h3>Hans Reichenbach</h3>
+            <p class="week-objective"><strong>Temas:</strong> Filosofía del espacio-tiempo y empirismo científico.</p>
+            <div class="bibliography-box">
+                <h4>Bibliografía Obligatoria:</h4>
+                <ul>
+                    <li><a href="pdfs/Reichenbach.pdf" class="bib-link" download>Reichenbach, H., <em>Lectura seleccionada (PDF)</em>.</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sesión 15: 08/09 -->
+    <div class="timeline-week-card">
+        <div class="week-marker">08/09</div>
+        <div class="week-content">
+            <h3>Karl Popper</h3>
+            <p class="week-objective"><strong>Temas:</strong> Falsacionismo y lógica de la investigación científica.</p>
+            <div class="bibliography-box">
+                <h4>Bibliografía Obligatoria:</h4>
+                <ul>
+                    <li><a href="pdfs/Popper.pdf" class="bib-link" download>Popper, K., <em>Lectura seleccionada (PDF)</em>.</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sesión 16: 10/09 -->
+    <div class="timeline-week-card">
+        <div class="week-marker">10/09</div>
+        <div class="week-content">
+            <h3>Jan Łukasiewicz</h3>
+            <p class="week-objective"><strong>Temas:</strong> Lógicas plurivalentes y el principio de contradicción.</p>
+            <div class="bibliography-box">
+                <h4>Bibliografía Obligatoria:</h4>
+                <ul>
+                    <li><a href="pdfs/Lukasiewicz.pdf" class="bib-link" download>Łukasiewicz, J., <em>Lectura seleccionada (PDF)</em>.</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sesión 17: 15/09 -->
+    <div class="timeline-week-card">
+        <div class="week-marker">15/09</div>
+        <div class="week-content">
+            <h3>Ludwig Wittgenstein (Periodo 1)</h3>
+            <p class="week-objective"><strong>Temas:</strong> El Tractatus Logico-Philosophicus y la teoría pictórica del significado.</p>
+            <div class="bibliography-box">
+                <h4>Bibliografía Obligatoria:</h4>
+                <ul>
+                    <li><a href="pdfs/Wittgenstein1.pdf" class="bib-link" download>Wittgenstein, L., <em>Tractatus Logico-Philosophicus (PDF)</em>.</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sesión 18: 17/09 -->
+    <div class="timeline-week-card">
+        <div class="week-marker">17/09</div>
+        <div class="week-content">
+            <h3>Ludwig Wittgenstein (Periodo 2)</h3>
+            <p class="week-objective"><strong>Temas:</strong> Investigaciones filosóficas, juegos del lenguaje y significado como uso.</p>
+            <div class="bibliography-box">
+                <h4>Bibliografía Obligatoria:</h4>
+                <ul>
+                    <li><a href="pdfs/Wittgenstein2.pdf" class="bib-link" download>Wittgenstein, L., <em>Investigaciones filosóficas (PDF)</em>.</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sesión 19: 22/09 -->
+    <div class="timeline-week-card">
+        <div class="week-marker">22/09</div>
+        <div class="week-content">
+            <h3>William James</h3>
+            <p class="week-objective"><strong>Temas:</strong> Pragmatismo, concepción de la verdad y empirismo radical.</p>
+            <div class="bibliography-box">
+                <h4>Bibliografía Obligatoria:</h4>
+                <ul>
+                    <li><a href="pdfs/James.pdf" class="bib-link" download>James, W., <em>Lectura seleccionada (PDF)</em>.</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sesión 20: 24/09 -->
+    <div class="timeline-week-card">
+        <div class="week-marker">24/09</div>
+        <div class="week-content">
+            <h3>Charles Sanders Peirce (Sesión I)</h3>
+            <p class="week-objective"><strong>Temas:</strong> Semiótica, lógica de la abducción y fijación de la creencia.</p>
+            <div class="bibliography-box">
+                <h4>Bibliografía Obligatoria:</h4>
+                <ul>
+                    <li><a href="pdfs/Peirce.pdf" class="bib-link" download>Peirce, C. S., <em>Lectura seleccionada (PDF)</em>.</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sesión 21: 29/09 -->
+    <div class="timeline-week-card">
+        <div class="week-marker">29/09</div>
+        <div class="week-content">
+            <h3>Charles Sanders Peirce (Sesión II)</h3>
+            <p class="week-objective"><strong>Temas:</strong> Pragmatismo y pragmaticismo: aclaración de nuestras ideas.</p>
+            <div class="bibliography-box">
+                <h4>Bibliografía Obligatoria:</h4>
+                <ul>
+                    <li><a href="pdfs/Peirce.pdf" class="bib-link" download>Peirce, C. S., <em>Lectura seleccionada (PDF)</em>.</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sesión 22: 01/10 -->
+    <div class="timeline-week-card">
+        <div class="week-marker">01/10</div>
+        <div class="week-content">
+            <h3>Willard Van Orman Quine</h3>
+            <p class="week-objective"><strong>Temas:</strong> Los dos dogmas del empirismo y la relatividad ontológica.</p>
+            <div class="bibliography-box">
+                <h4>Bibliografía Obligatoria:</h4>
+                <ul>
+                    <li><a href="pdfs/Quine.pdf" class="bib-link" download>Quine, W. V. O., <em>Lectura seleccionada (PDF)</em>.</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sesión 23: 06/10 (Fenomenología) -->
+    <div class="timeline-week-card">
+        <div class="week-marker">06/10</div>
+        <div class="week-content">
+            <h3>Edmund Husserl (Sesión I)</h3>
+            <p class="week-objective"><strong>Temas:</strong> Fundamentos de la fenomenología trascendental e intencionalidad.</p>
+            <div class="bibliography-box">
+                <h4>Bibliografía Obligatoria:</h4>
+                <ul>
+                    <li><a href="pdfs/Husserl.pdf" class="bib-link" download>Husserl, E., <em>Lectura seleccionada (PDF)</em>.</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sesión 24: 08/10 -->
+    <div class="timeline-week-card">
+        <div class="week-marker">08/10</div>
+        <div class="week-content">
+            <h3>Edith Stein</h3>
+            <p class="week-objective"><strong>Temas:</strong> Fenomenología de la empatía y la estructura de la persona humana.</p>
+            <div class="bibliography-box">
+                <h4>Bibliografía Obligatoria:</h4>
+                <ul>
+                    <li><a href="pdfs/Stein.pdf" class="bib-link" download>Stein, E., <em>Lectura seleccionada (PDF)</em>.</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sesión 25: 13/10 -->
+    <div class="timeline-week-card">
+        <div class="week-marker">13/10</div>
+        <div class="week-content">
+            <h3>Karl Jaspers</h3>
+            <p class="week-objective"><strong>Temas:</strong> Filosofía de la existencia, situaciones límite y trascendencia.</p>
+            <div class="bibliography-box">
+                <h4>Bibliografía Obligatoria:</h4>
+                <ul>
+                    <li><a href="pdfs/Jaspers.pdf" class="bib-link" download>Jaspers, K., <em>Lectura seleccionada (PDF)</em>.</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sesión 26: 15/10 -->
+    <div class="timeline-week-card">
+        <div class="week-marker">15/10</div>
+        <div class="week-content">
+            <h3>Edmund Husserl (Sesión II)</h3>
+            <p class="week-objective"><strong>Temas:</strong> La crisis de las ciencias europeas y el mundo de la vida (Lebenswelt).</p>
+            <div class="bibliography-box">
+                <h4>Bibliografía Obligatoria:</h4>
+                <ul>
+                    <li><a href="pdfs/Husserl2.pdf" class="bib-link" download>Husserl, E., <em>Lectura seleccionada (PDF)</em>.</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sesión 27: 27/10 -->
+    <div class="timeline-week-card">
+        <div class="week-marker">27/10</div>
+        <div class="week-content">
+            <h3>Maurice Merleau-Ponty</h3>
+            <p class="week-objective"><strong>Temas:</strong> Fenomenología de la percepción y el cuerpo vivido.</p>
+            <div class="bibliography-box">
+                <h4>Bibliografía Obligatoria:</h4>
+                <ul>
+                    <li><a href="pdfs/Merleau-Ponty.pdf" class="bib-link" download>Merleau-Ponty, M., <em>Lectura seleccionada (PDF)</em>.</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sesión 28: 29/10 -->
+    <div class="timeline-week-card">
+        <div class="week-marker">29/10</div>
+        <div class="week-content">
+            <h3>Martin Heidegger (Sesión I)</h3>
+            <p class="week-objective"><strong>Temas:</strong> Ser y Tiempo: la pregunta por el ser y la analítica del Dasein.</p>
+            <div class="bibliography-box">
+                <h4>Bibliografía Obligatoria:</h4>
+                <ul>
+                    <li><a href="pdfs/Heidegger1.pdf" class="bib-link" download>Heidegger, M., <em>Lectura seleccionada (PDF)</em>.</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sesión 29: 03/11 -->
+    <div class="timeline-week-card">
+        <div class="week-marker">03/11</div>
+        <div class="week-content">
+            <h3>Martin Heidegger (Sesión II)</h3>
+            <p class="week-objective"><strong>Temas:</strong> El giro (Kehre), la crítica a la técnica y la esencia de la verdad.</p>
+            <div class="bibliography-box">
+                <h4>Bibliografía Obligatoria:</h4>
+                <ul>
+                    <li><a href="pdfs/Heidegger2.pdf" class="bib-link" download>Heidegger, M., <em>Lectura seleccionada (PDF)</em>.</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</div>
+                <!-- Remaining session blocks scale down sequentially -->
+            </div>
+        </section>
+
+        <!-- Section 3: Evaluación (New Component) -->
+        <section id="evaluacion" aria-labelledby="titulo-evaluacion">
+            <h2>Evaluación</h2>
+            <p>El rendimiento académico se evaluará de manera formativa y sumativa a lo largo del semestre mediante los siguientes criterios:</p>
+            <table class="academic-table">
+                <thead>
+                    <tr>
+                        <th>Componente Evaluativo</th>
+                        <th>Descripción Breve</th>
+                        <th>Porcentaje</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Parcial I</strong></td>
+                        <td>Examen escrito sobre el quiebre del idealismo decimonónico y sus críticos.</td>
+                        <td>30%</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Parcial II</strong></td>
+                        <td>Análisis de texto y comentario crítico en torno a la tradición analítica.</td>
+                        <td>30%</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Ensayos Cortos</strong></td>
+                        <td>Resúmenes de lectura y comprobaciones analíticas periódicas.</td>
+                        <td>20%</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Seminario Final</strong></td>
+                        <td>Exposición oral y entrega del artículo de investigación final.</td>
+                        <td>20%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Section 4: Reglas Básicas (New Component) -->
+        <section id="reglas" aria-labelledby="titulo-reglas">
+            <h2>Reglas Básicas</h2>
+            <p>Para asegurar un entorno de debate intelectual constructivo y respetuoso, nos regiremos por las siguientes pautas:</p>
+            <ul class="academic-list policy-list">
+                <li><strong>Puntualidad y Asistencia:</strong> Las sesiones comenzarán puntualmente en los horarios asignados. Se espera una asistencia activa y una lectura previa exhaustiva de los materiales.</li>
+                <li><strong>Honestidad Académica:</strong> El plagio o el uso indebido de fuentes sin su debida citación técnica conlleva la reprobación inmediata del componente evaluativo, de acuerdo con los reglamentos institucionales.</li>
+                <li><strong>Uso de Tecnología:</strong> Los dispositivos electrónicos (ordenadores portátiles y tablets) deben utilizarse exclusivamente para la toma de apuntes o la consulta de lecturas del curso.</li>
+                <li><strong>Cultura de Debate:</strong> La discusión filosófica exige rigor intelectual y un respeto absoluto hacia las posturas y argumentos planteados por todos los miembros del seminario.</li>
+            </ul>
+        </section>
+
     </main>
 
-    <!-- Pie de página con propiedad intelectual -->
     <footer>
         <p>&copy; 2026 Programa de Estudios. Diseñado para el ámbito académico.</p>
     </footer>
